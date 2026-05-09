@@ -1,0 +1,66 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   app/globals.css
+   Global styles for Azaan Fitness app
+   This file is imported once in app/layout.jsx
+───────────────────────────────────────────────────────────────────────────── */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600;700&display=swap');
+
+/* Tailwind base layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base reset & body ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Custom scrollbar (orange themed) ── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.4);
+  border-radius: 2px;
+}
+
+/* ── Page fade-in animation ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+/* ── Input & select dark styling ── */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+select option {
+  background: #111;
+  color: white;
+}
