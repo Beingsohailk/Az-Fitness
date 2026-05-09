@@ -100,7 +100,7 @@ export const GYM_INFO = {
   phone: "+91 8310526243",
   whatsapp: "918310526243",
   email: "ali@azaanfitness.in",
-  address: "Ananad nagar, Hubballi-580031, Karnataka",
+  address: "Anand nagar, Hubballi-580031, Karnataka",
   timings: {
     weekdays: "5AM – 10PM",
     sunday: "6AM – 8PM",
